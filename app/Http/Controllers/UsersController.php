@@ -100,6 +100,17 @@ class UsersController extends Controller
     }
 
     /**
+     * Show user family tree with couple.
+     *
+     * @param  \App\User  $user
+     * @return \Illuminate\View\View
+     */
+    public function treeCouples(User $user)
+    {
+        return view('users.tree-couples', compact('user'));
+    }
+
+    /**
      * Show user death info.
      *
      * @param  \App\User  $user
