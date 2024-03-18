@@ -31,11 +31,11 @@
         <span class="glyphicon glyphicon-tree-deciduous"></span>
     </a>
 
-    <a href="{{ route('users.table',[$user->id]) }}"
-       title="{{ trans('app.show_table') }}"
-       class="{{ Request::segment(3) == 'table' ? 'btn btn-default active' : 'btn btn-default' }}">
-        <span class="glyphicon glyphicon-list"></span>
-    </a>
+{{--    <a href="{{ route('users.table',[$user->id]) }}"--}}
+{{--       title="{{ trans('app.show_table') }}"--}}
+{{--       class="{{ Request::segment(3) == 'table' ? 'btn btn-default active' : 'btn btn-default' }}">--}}
+{{--        <span class="glyphicon glyphicon-list"></span>--}}
+{{--    </a>--}}
 
 {{--    {{ link_to_route('users.marriages', trans('app.show_marriages'), [$user->id], ['class' => Request::segment(3) == 'marriages' ? 'btn btn-default active' : 'btn btn-default']) }}--}}
     <a href="{{ route('users.marriages',[$user->id]) }}"
