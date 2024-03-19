@@ -31,6 +31,12 @@
         <span class="glyphicon glyphicon-tree-deciduous"></span>
     </a>
 
+    <a href="{{ route('users.list',[$user->id]) }}"
+       title="List"
+       class="{{ Request::segment(3) == 'list' ? 'btn btn-default active' : 'btn btn-default' }}">
+        <span class="glyphicon glyphicon-list"></span>
+    </a>
+
 {{--    <a href="{{ route('users.table',[$user->id]) }}"--}}
 {{--       title="{{ trans('app.show_table') }}"--}}
 {{--       class="{{ Request::segment(3) == 'table' ? 'btn btn-default active' : 'btn btn-default' }}">--}}

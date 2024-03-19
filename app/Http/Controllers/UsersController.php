@@ -111,6 +111,17 @@ class UsersController extends Controller
     }
 
     /**
+     * Show user family list.
+     *
+     * @param  \App\User  $user
+     * @return \Illuminate\View\View
+     */
+    public function list(User $user)
+    {
+        return view('users.list', compact('user'));
+    }
+
+    /**
      * Show user death info.
      *
      * @param  \App\User  $user

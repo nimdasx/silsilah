@@ -52,6 +52,7 @@ Route::controller(UsersController::class)->group(function () {
     Route::patch('users/{user}/photo-upload', 'photoUpload')->name('users.photo-upload');
     Route::delete('users/{user}', 'destroy')->name('users.destroy');
     Route::get('users/{user}/tree-couples', 'treeCouples')->name('users.tree-couples');
+    Route::get('users/{user}/list', 'list')->name('users.list');
 });
 
 Route::get('users/{user}/marriages', [UserMarriagesController::class, 'index'])->name('users.marriages');
