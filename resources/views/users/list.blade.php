@@ -11,6 +11,7 @@
             <th>Lv - {{ trans('user.name') }}</th>
             <th>{{ trans('user.gender') }}</th>
             <th>{{ trans('user.address') }}</th>
+            <th>{{ trans('user.phone') }}</th>
         </tr>
         <?php
         $i=0;
@@ -24,6 +25,7 @@
                 <td><?= $lv1Count ?> - @include('users.partials.list-couples-label',['sunah'=>$child])</td>
                 <td>{{$child->gender}}</td>
                 <td>{{$child->address}}</td>
+                <td>{{$child->phone}}</td>
             </tr>
             <?php
             //level2 begin
@@ -37,6 +39,7 @@
                     <td><?= $lv1Count . "." . $lv2Count ?> - @include('users.partials.list-couples-label',['sunah'=>$lv2])</td>
                     <td>{{$lv2->gender}}</td>
                     <td>{{$lv2->address}}</td>
+                    <td>{{$lv2->phone}}</td>
                 </tr>
                 <?php
                 //level 3 begin
@@ -50,6 +53,7 @@
                         <td><?= $lv1Count . "." . $lv2Count .".". $lv3Count?> - @include('users.partials.list-couples-label',['sunah'=>$lv3])</td>
                         <td>{{$lv3->gender}}</td>
                         <td>{{$lv3->address}}</td>
+                        <td>{{$lv3->phone}}</td>
                     </tr>
                     <?php
                     //level 4 begin
@@ -63,6 +67,7 @@
                             <td><?= $lv1Count . "." . $lv2Count .".". $lv3Count.".". $lv4Count?> - @include('users.partials.list-couples-label',['sunah'=>$lv4])</td>
                             <td>{{$lv4->gender}}</td>
                             <td>{{$lv4->address}}</td>
+                            <td>{{$lv4->phone}}</td>
                         </tr>
                         <?php
                         //level 5 begin
@@ -76,6 +81,7 @@
                                 <td><?= $lv1Count . "." . $lv2Count .".". $lv3Count.".". $lv4Count.".". $lv5Count?> - @include('users.partials.list-couples-label',['sunah'=>$lv5])</td>
                                 <td>{{$lv5->gender}}</td>
                                 <td>{{$lv5->address}}</td>
+                                <td>{{$lv5->phone}}</td>
                             </tr>
                             <?php
                             //level 6 begin
@@ -89,6 +95,7 @@
                                     <td><?= $lv1Count . "." . $lv2Count .".". $lv3Count.".". $lv4Count.".". $lv5Count.".". $lv6Count?> - @include('users.partials.list-couples-label',['sunah'=>$lv6])</td>
                                     <td>{{$lv6->gender}}</td>
                                     <td>{{$lv6->address}}</td>
+                                    <td>{{$lv6->phone}}</td>
                                 </tr>
                                 <?php
                             }
